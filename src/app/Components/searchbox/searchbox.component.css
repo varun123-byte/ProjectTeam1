@@ -1,0 +1,160 @@
+body {
+    /* background-image: url('https://t3.ftcdn.net/jpg/01/98/05/16/360_F_198051606_qB9GmDGg79tCtoiHkuTtYAQlqpN6feyL.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100px;
+}
+
+
+#search {
+    display:block;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 65%;
+    border-radius: 5px;
+    height: 70%;
+}
+
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    /* margin: 1px 2px; */
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    height: 50px;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    height: 50px;
+    color: white;
+  }
+  
+  .fa-google {
+    height: 50px;
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    height: 50px;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #c33e3e;
+    height: 50px;
+    color: white;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    background-color: #3498db;
+    color: white;
+  }
+
+.home-registration-form {
+    /* color: white; */
+    background: rgba(239, 244, 246, 0.2);
+    border-radius: 7px;
+  }
+ 
+  .registration-form {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 20px auto; /* Center the form horizontally */
+    display:block;
+    /* background-color: white; */
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    z-index: 999;
+}
+  .registration-form-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .registration-input-box,select {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+ 
+/* .col-lg-3 {
+    flex: 0 0 calc(33.333% - 15px);  Adjust the width of columns and spacing between them
+    margin-right: 15px;  Adjust the spacing between columns
+} */
+.submitBnt {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    width: 800px;
+    height: 40px;
+}
+  .registration-form-box .selectize-input {
+    line-height: 2.4;
+    padding: 6px 6px 6px 45px;
+ 
+  }
+ 
+  .registration-form-box i {
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 12px;
+    z-index: 2;
+    color: #777777;
+    margin-right: 20px;
+  }
+ 
+  .registration-input-box {
+    border: none;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    font-size: 13px;
+    height: 45px !important;
+    padding: 6px 6px 6px 45px;
+    border: 1px solid #d0d0d0;
+  }
+
+  /* Additional styles for mobile devices */
+@media only screen and (min-width: 200px) and (max-width:1000px){
+  .col-lg-3 {
+      width: 550%;
+      margin-top: 1.5%;
+  }
+
+  .registration-form-box {
+      /* display: flex; */
+      width: 900px;
+      align-items: center;
+  }
+
+  .registration-form-box i {
+      margin-right: 5px;
+  }
+
+  .registration-input-box {
+      width: 500%;
+  }
+
+  .submitBnt {
+      margin-top: 10px;
+  }
+}

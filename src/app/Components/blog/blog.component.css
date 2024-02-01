@@ -1,0 +1,69 @@
+.example-card {
+    max-width: 500px;
+    padding: 0px 0px;
+    margin: 10px 10px;
+    width: 100%;
+    /* margin-top: 30%; */
+    /* margin-bottom: 30px; */
+  }
+
+  mat-card-content {
+    font-size: 40%;
+    padding: 10px 30px;
+  }
+
+  .imagecard {
+    background-image: url('/assets/images/post-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 200px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  }
+
+  .imagecard1 {
+    background-image: url('/assets/images/post-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 200px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  }
+
+  .imagecard2 {
+    background-image: url('/assets/images/post-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 200px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  }
+
+  .site-heading {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 10px;
+  }
+  
+  .site-heading h2 {
+    color: #3e3e3e;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+    font-size: calc(1.325rem + .9vw);
+  }
+  
+  
+  .site-heading p {
+    color: #777;
+    font-size: 20px;
+
+  }

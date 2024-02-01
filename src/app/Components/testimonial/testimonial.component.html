@@ -1,0 +1,26 @@
+<div class="gtco-testimonials" style="margin-top: -20%;">
+  <div class="site-heading p-5">
+    <h2 style="color: black; font-size: 40px; text-align: center;">Our <span>Testimonials</span></h2>
+  </div>
+
+  <ngb-carousel *ngIf="testimonials && testimonials.length > 0">
+    <ng-container *ngFor="let testimonial of testimonials">
+      <ng-template ngbSlide>
+        <div class="container">
+          <div class="row">
+            <div class="col-4" *ngFor="let testimonial of testimonials">
+              <figure class="snip1390">
+                <img [src]="testimonial.imageUrl" alt="profile-sample" class="profile" />
+                <figcaption>
+                  <h2>{{ testimonial.name }}</h2>
+                  <h4>{{ testimonial.role }}</h4>
+                  <blockquote>{{ testimonial.comment }}</blockquote>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </ngb-carousel>
+</div><br><br><br>

@@ -1,0 +1,53 @@
+<div class="container" style="margin-top: 5%;">
+  <span class="subheading text-dark">Recently Added Jobs</span>
+  <h2 class="mb-4 text-dark" style="font-size: 30px;">Featured Jobs Posts For This Week</h2>
+  <div class="row">
+    <mat-grid-list cols="4" rowHeight="1:1"  data-aos="slide-left">
+      <div class="jb col-3" *ngFor="let job of jobsOnPage">
+        <!-- Your job card template here -->
+        <mat-grid-tile>&nbsp;&nbsp;&nbsp;
+          <mat-card class="example-card">
+            <mat-card-header></mat-card-header>
+            <button
+              style="margin-left: 168px; border-radius: 30px 0px 0px 30px;"
+              mat-raised-button
+              [style.background-color]="job.type === 'Part Time' ? 'rgb(56, 231, 43)' : '#3B70DA'"
+              [style.color]="job.type === 'Part Time' ? 'black' : ''"
+              
+              matBadgePosition="before"
+              matBadgeColor="accent"
+            >
+              {{ job.type }}
+            </button>
+            <mat-card-header>
+              <mat-card-title-group>
+                <img mat-card-sm-image [src]="job.image" />
+                <mat-card-title style="font-size: 18px;">{{ job.title }}</mat-card-title>
+                <mat-card-subtitle class="mt-1">
+                  <mat-icon class="mt-1">work</mat-icon>&nbsp;<span style="margin-top: 20px;">{{ job.category }}</span>
+                  &nbsp;
+                  <mat-icon>payment</mat-icon>&nbsp;{{ job.salary }}
+                </mat-card-subtitle>
+                <mat-card-subtitle>
+                  <mat-icon> location_on</mat-icon>&nbsp;{{ job.location }}
+                </mat-card-subtitle>
+              </mat-card-title-group>
+            </mat-card-header><br />
+            <mat-card-content>
+              <a color="primary" mat-raised-button [href]="job.applyLink" target="_blank">Apply Now</a>&nbsp;
+              <button mat-button class="bg-warning" (click)="openJobDetailsDialog(job)">More Info</button>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+  </div>
+  <mat-paginator [length]="jobList.length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                (page)="onPageChange($event)">
+  </mat-paginator>
+</div>
+
+
+

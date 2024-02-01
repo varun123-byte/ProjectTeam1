@@ -1,0 +1,113 @@
+body {
+    /* background-image: url('https://t3.ftcdn.net/jpg/01/98/05/16/360_F_198051606_qB9GmDGg79tCtoiHkuTtYAQlqpN6feyL.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 150px;
+}
+
+.subheading {
+    font-size: 20px;
+}
+
+
+.job-post-item {
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+   }
+   
+   .job-post-item .d-block d-md-flex:hover {
+    transform: translateY(-10px);
+   }
+   
+   .job-post-item .one-forth .btn-primary {
+    padding: 5px 30px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+   }
+   
+   .job-post-item .one-forth .btn-primary:hover {
+    background: #4a93b0;
+    color: #ffffff;
+   }
+   
+   .sidebar-box {
+    border: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+   }
+   
+   .sidebar-box:hover {
+    transform: translateY(-10px);
+   }
+   
+   .sidebar-box .company-wrap img {
+    width: 100%;
+    height: auto;
+   }
+   
+   .sidebar-box .text h3 {
+    margin-bottom: 10px;
+   }
+   
+   .sidebar-box .text h3 a {
+    color: #3c94c4;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+   }
+   
+   .sidebar-box .text h3 a:hover {
+    color: #4a93b0;
+   }
+   
+   .sidebar-box .text p {
+    color: #8c8c8c;
+    font-size: 14px;
+   }
+   
+   .sidebar-box .text p .number {
+    color: #3c94c4;
+    font-weight: bold;
+   }
+ 
+   .one-third{
+    width: 80%;
+   }
+
+
+   .job-post-item:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+   }
+
+
+   .site-heading {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 10px;
+  }
+  
+  .site-heading h2 {
+    color: #3e3e3e;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+    font-size: calc(1.325rem + .9vw);
+  }
+  
+  
+  .site-heading p {
+    color: #777;
+    font-size: 20px;
+
+  }

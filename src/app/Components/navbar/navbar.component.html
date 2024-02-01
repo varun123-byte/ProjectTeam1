@@ -1,0 +1,159 @@
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- <mat-divider></mat-divider> -->
+<mat-toolbar class="matt" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.001); background-color:black; color: white; position: fixed; z-index: 1; height: 70px;">
+  <!-- <button mat-icon-button><i class="fa fa-google"></i></button> -->
+  <img src="/assets/images/jj-transformed.png" alt="" width="150" height="100">
+
+<span class="example-spacer"></span>
+<div class="menu" style="font-size: 21px;flex: 2 1 auto; padding: 5px 10px;	font-family: 'Open Sans', sans-serif;">
+<a><button [routerLink]="['/about']" mat-button style="font-size: 15px;color:white; font-family: 'Open Sans', sans-serif;"><b>Home</b></button></a>
+<a><button mat-button [routerLink]="['/about']" style="font-size: 15px; color: white; font-family: 'Open Sans', sans-serif;"><b>About</b></button></a>
+<a><button mat-button>
+  <button mat-button [matMenuTriggerFor]="animals" style="font-size: 15px; font-family: 'Open Sans', sans-serif; color: white;"><b>Services</b>&nbsp;
+    <i class="fa fa-caret-down" style="font-size:15px;top: -60px;" ></i></button>
+  <mat-menu #animals="matMenu" style="color: aqua;">
+    <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+    <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+  </mat-menu>
+  
+  <mat-menu #vertebrates="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
+    <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
+    <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+    <button mat-menu-item>Birds</button>
+    <button mat-menu-item>Mammals</button>
+  </mat-menu>
+  
+  <mat-menu #invertebrates="matMenu">
+    <button mat-menu-item>Insects</button>
+    <button mat-menu-item>Molluscs</button>
+    <button mat-menu-item>Crustaceans</button>
+    <button mat-menu-item>Corals</button>
+    <button mat-menu-item>Arachnids</button>
+    <button mat-menu-item>Velvet worms</button>
+    <button mat-menu-item>Horseshoe crabs</button>
+  </mat-menu>
+  
+  <mat-menu #fish="matMenu">
+    <button mat-menu-item>Baikal oilfish</button>
+    <button mat-menu-item>Bala shark</button>
+    <button mat-menu-item>Ballan wrasse</button>
+    <button mat-menu-item>Bamboo shark</button>
+    <button mat-menu-item>Banded killifish</button>
+  </mat-menu>
+  
+  <mat-menu #amphibians="matMenu">
+    <button mat-menu-item>Sonoran desert toad</button>
+    <button mat-menu-item>Western toad</button>
+    <button mat-menu-item>Arroyo toad</button>
+    <button mat-menu-item>Yosemite toad</button>
+  </mat-menu>
+  
+  <mat-menu #reptiles="matMenu">
+    <button mat-menu-item>Banded Day Gecko</button>
+    <button mat-menu-item>Banded Gila Monster</button>
+    <button mat-menu-item>Black Tree Monitor</button>
+    <button mat-menu-item>Blue Spiny Lizard</button>
+    <button mat-menu-item disabled>Velociraptor</button>
+  </mat-menu>
+  </button></a>
+<a><button mat-button style="font-size: 15px; color:white; font-family: 'Open Sans', sans-serif;"><b>Blogs</b></button></a>
+<a><button mat-button style="font-size: 15px; color:white; font-family: 'Open Sans', sans-serif;"><b>Contact Us</b></button></a>
+<!-- <div class="menus"></div> -->
+<span class="example-spacer" style="margin-left: 25%;"></span>
+<!-- <button mat-raised-button color="primary" style="border-radius: 30px; height: 40px; width: 10%;">Posts Jobs</button> -->
+ <button mat-icon-button><a href="" style="text-decoration: none; color: white;"><i class="fa fa-user" style="font-size: 18px;"> Signup</i></a></button>
+<!--<a><button mat-button style="font-size: 18px;color: rgb(243, 242, 242); font-family: 'Open Sans', sans-serif;"></button></a> -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- <button mat-raised-button (click)="openDialog()">Pick one</button> -->
+    <button mat-icon-button><a class="login-trigger" href="#" data-target="#login" data-toggle="modal"><i class="fa fa-lock" style="font-size: 18px;">&nbsp;Login</i></a></button>
+    
+    <!-- <a><button mat-button style="font-size: 18px; color: rgb(243, 242, 242); font-family: 'Open Sans', sans-serif;"></button></a> -->
+</div>
+</mat-toolbar>
+
+<!-- <mat-toolbar style="height: 50px; font-size: 5px;background-color: rgb(1, 28, 28); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <button mat-icon-button><mat-icon></mat-icon></button>
+  <a><button mat-button>www.instagram&#64;gmail.com</button></a>
+  <a><button mat-button>+91 87862 87620</button></a>
+  <span class="example-spacer"></span>
+<a><button mat-icon-button><i class="fa fa-facebook" style="font-size: 20px;"></i></button></a>
+<a><button mat-icon-button><i class="fa fa-instagram" style="font-size: 20px;"></i></button></a>
+<a><button mat-icon-button><i class="fa fa-whatsapp" style="font-size: 20px;"></i></button></a>
+<a><button mat-icon-button><i class="fa fa-twitter" style="font-size: 20px;"></i></button></a>
+</mat-toolbar> -->
+
+
+<!-- <mat-divider></mat-divider> -->
+<!-- <mat-toolbar class="matt" style="background-color: transparent;">
+  <button mat-icon-button><i class="fa fa-google"></i></button>
+  <span>JOBFACT</span>
+
+<span class="example-spacer"></span>
+<a class="hover-1"><button mat-button style="font-size: 15px;">Home</button></a>
+<a><button mat-button style="font-size: 15px;">About</button></a>
+<a><button mat-button>
+  <button mat-button [matMenuTriggerFor]="animals" style="font-size: 15px;">Services&nbsp;
+    <i class="fa fa-caret-down" style="font-size:15px;top: -60px;" ></i></button>
+  <mat-menu #animals="matMenu" style="color: aqua;">
+    <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+    <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+  </mat-menu>
+  
+  <mat-menu #vertebrates="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
+    <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
+    <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+    <button mat-menu-item>Birds</button>
+    <button mat-menu-item>Mammals</button>
+  </mat-menu>
+  
+  <mat-menu #invertebrates="matMenu">
+    <button mat-menu-item>Insects</button>
+    <button mat-menu-item>Molluscs</button>
+    <button mat-menu-item>Crustaceans</button>
+    <button mat-menu-item>Corals</button>
+    <button mat-menu-item>Arachnids</button>
+    <button mat-menu-item>Velvet worms</button>
+    <button mat-menu-item>Horseshoe crabs</button>
+  </mat-menu>
+  
+  <mat-menu #fish="matMenu">
+    <button mat-menu-item>Baikal oilfish</button>
+    <button mat-menu-item>Bala shark</button>
+    <button mat-menu-item>Ballan wrasse</button>
+    <button mat-menu-item>Bamboo shark</button>
+    <button mat-menu-item>Banded killifish</button>
+  </mat-menu>
+  
+  <mat-menu #amphibians="matMenu">
+    <button mat-menu-item>Sonoran desert toad</button>
+    <button mat-menu-item>Western toad</button>
+    <button mat-menu-item>Arroyo toad</button>
+    <button mat-menu-item>Yosemite toad</button>
+  </mat-menu>
+  
+  <mat-menu #reptiles="matMenu">
+    <button mat-menu-item>Banded Day Gecko</button>
+    <button mat-menu-item>Banded Gila Monster</button>
+    <button mat-menu-item>Black Tree Monitor</button>
+    <button mat-menu-item>Blue Spiny Lizard</button>
+    <button mat-menu-item disabled>Velociraptor</button>
+  </mat-menu>
+  </button></a>
+<a><button mat-button style="font-size: 15px;">Blogs</button></a>
+<a><button mat-button style="font-size: 15px;">Contact Us</button></a>
+
+<span class="example-spacer"></span>
+<button mat-icon-button><i class="fa fa-user"></i></button>
+  <span style="font-size: 15px;"><a href="" style="text-decoration: none; color: white;">Login / Register</a></span>
+
+</mat-toolbar> -->
+
+
+
+
+

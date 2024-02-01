@@ -1,0 +1,139 @@
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<header>
+    <div class="header-title" data-aos="slide-right">
+    <h1>Find Your<br><br> <span>Perfect Job</span> <br><br>Easily.
+    </h1>    
+<!-- <h3 class=" text-white" style="margin-top: -9%;">We have 1542 job offers for you!</h3>   -->
+</div>
+  </header>
+  <div class="bg-overlay"></div>
+  
+</body>
+<!-- <div class="site-heading p-5" style="margin-top: 3%;">
+    <h2>top Trending <span>Categories</span></h2>
+    <p>A better career is out there. We'll help you find it. We're your first step to becoming everything you want to be.</p>
+ </div> -->
+
+<!-- <div class="container mb-5" style="margin-top: -5%; ">
+
+  <div class="row g-0"  style="align-items: center; justify-content: center; text-align: center;">
+    <div class="col-2">
+      <div class="card" style="border-radius: 0; cursor: pointer;">
+          <div class="card-body">
+          <div class="card-head">
+              <h2>Website and Training</h2>
+          </div>
+          <div class="card-icon">
+              <i class="fa fa-graduation-cap" style="font-size: 40px;"></i>
+          </div>
+          <div class="card-info mt-3">
+              <p>143 Open Positions</p>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-2">
+    <div class="card" style="border-radius: 0; cursor: pointer;">
+        <div class="card-body">
+        <div class="card-head">
+            <h2>Education and Training</h2>
+        </div>
+        <div class="card-icon">
+            <i class="fa fa-graduation-cap" style="font-size: 40px;"></i>
+        </div>
+        <div class="card-info mt-3">
+            <p>143 Open Positions</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-2">
+    <div class="card" style="border-radius: 0; cursor: pointer;">
+        <div class="card-body">
+        <div class="card-head">
+            <h2>Graphic and UI/UX Design</h2>
+        </div>
+        <div class="card-icon">
+            <i class="fa fa-table" style="font-size: 40px;"></i>
+        </div>
+        <div class="card-info mt-3">
+            <p>143 Open Positions</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-2">
+    <div class="card" style="border-radius: 0; cursor: pointer;">
+        <div class="card-body">
+        <div class="card-head">
+            <h2>Account and Finance</h2>
+        </div>
+        <div class="card-icon">
+            <i class="fa fa-calculator" style="font-size: 40px;"></i>
+        </div>
+        <div class="card-info mt-3">
+            <p>143 Open Positions</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-2">
+    <div class="card" style="border-radius: 0; cursor: pointer;">
+        <div class="card-body">
+        <div class="card-head">
+            <h2>Restaurent and Food</h2>
+        </div>
+        <div class="card-icon">
+            <i class="fa fa-android" style="font-size: 40px;"></i>
+        </div>
+        <div class="card-info mt-3">
+            <p>143 Open Positions</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-2">
+    <div class="card" style="border-radius: 0; cursor: pointer;">
+        <div class="card-body">
+        <div class="card-head">
+            <h2>Website and Software</h2>
+        </div>
+        <div class="card-icon">
+            <i class="fa fa-stethoscope" style="font-size:40px"></i>
+        </div>
+        <div class="card-info mt-3">
+            <p>143 Open Positions</p>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  </div> -->
+
+  <div class="container mb-5" style="margin-top: -5%;">
+    <div class="row g-0" style="align-items: center; justify-content: center; text-align: center; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+ 
+      <!-- Repeat for each card in the cards array -->
+      <div *ngFor="let card of cards; let i = index" class="col-2" [@cardAnimation] (click)="animateCard(i)">
+        <mat-card class="custom-card">
+          <mat-card-content>
+            <div class="card-head">
+              <h2>{{ card.title }}</h2>
+            </div>
+            <div class="card-icon">
+              <i class="fa {{ card.icon }}" style="font-size: 40px;"></i>
+            </div>
+            <div class="card-info mt-3">
+              <p>{{ card.positions }}</p>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+ 
+    </div>
+  </div>

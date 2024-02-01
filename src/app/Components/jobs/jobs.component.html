@@ -1,0 +1,67 @@
+<!-- jobs.component.html -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+<div class="container">
+    <div class="row">
+      <div class="col-lg-9 pr-lg-5">
+        <!-- Header for Recent Jobs Posted -->
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+            <span class="subheading">Recent Jobs Posted</span>
+            <h2 class="mb-4" style="font-size: 30px;">Featured Jobs Posts For This Week</h2>
+          </div>
+        </div>
+ 
+        <!-- Loop through the jobs and create job cards -->
+        <div class="row" *ngFor="let job of jobs">
+          <div class="col-md-12 ftco-animate fadeInUp ftco-animated w3-animate-left">
+            <div class="job-post-item p-4 d-lg-flex align-items-center"
+              style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"  data-aos="fade-in">
+              <div class="one-third mb-4 mb-md-0" >
+                <div class="job-post-item-header align-items-center">
+                  <h2 class="mr-3 text-black"><a href="{{ job.link }}" style="text-decoration: none; color: black;">{{ job.title }}</a></h2>
+                </div>
+                <div class="job-post-item-body d-block d-md-flex">
+                  <div class="mr-3"><span class="icon-layers"></span> <a href="{{ job.link }}" style="text-decoration: none; color: black;">{{ job.company }}</a></div>
+                  <div>
+                    <span class="icon-my_location"></span> <span>{{ job.location }}</span>
+                    &nbsp;
+                    <a href="{{ job.infoLink }}" style="color: rgb(67, 150, 239); text-decoration: none;"><i class="fa fa-info-circle" style="color: rgb(67, 150, 239);"></i>More info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="one-forth ml-auto d-flex align-items-center mt-4 md-md-0">
+                <div>
+                  <a href="#" class="icon text-center d-flex justify-content-center align-items-center icon mr-2">
+                    <span class="icon-heart"></span>
+                  </a>
+                </div>
+                <a href="{{ job.link }}" class="btn btn-primary">Apply Job</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Add the sidebar content here -->
+      <div class="col-lg-3 sidebar">
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+            <h2 class="mb-4">Top Recruitments</h2>
+          </div>
+        </div>
+        <!-- Loop through recruitments and create recruitment boxes -->
+        <div class="sidebar-box ftco-animate fadeInUp ftco-animated" *ngFor="let recruitment of recruitments"
+          style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; background-color: white;">
+          <div class="w3-animate-zoom" >
+            <a href="#" class="company-wrap"><img [src]="recruitment.imageUrl" class="img-fluid"
+                alt="Colorlib Free Template"></a>
+            <div class="text p-3">
+              <h3><a href="#" style="text-decoration: none; color: black;">{{ recruitment.companyName }}</a></h3>
+              <p><span class="number">{{ recruitment.openPositions }}</span> <span>Open position</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

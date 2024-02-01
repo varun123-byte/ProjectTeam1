@@ -1,0 +1,42 @@
+.inner-hire-left {
+    width: 100%;
+    padding: 60px 30px;
+}
+
+.inner-hire-right {
+    width: 100%;
+    background-color: red;
+    
+}
+
+.inner-hire-left h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.inner-hire-left p {
+    color: #f2f2f2;
+    font-size: 20px;
+    line-height: 1.5rem;
+    
+}   
+
+.inner-hire-left a.jobguru-btn-3 {
+    margin-top: 20px;
+}
+
+.jobguru-btn-3 {
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background: #216a9b none repeat scroll 0 0;
+    border-radius: 4px;
+}

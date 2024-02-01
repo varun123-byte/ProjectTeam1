@@ -1,0 +1,154 @@
+.bg {
+    position: relative;
+    background-image:  url('https://themescare.com/demos/jobguru-version-2/assets/img/video_bg.jpeg');
+    background-repeat:  no-repeat;
+    /* background-attachment:  fixed; */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    padding: 10px 40px;
+    color: white;
+}
+
+/* Add these styles to your existing CSS or in a new style block */
+
+.container-fluid {
+    position: relative;
+  }
+  
+  
+  .bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for the desired opacity */
+    z-index: 1;
+  }
+  
+  
+  
+  /* Additional styles for the rest of your elements... */
+  
+
+.video-btn {
+    padding: 10px 500px;
+    margin-top: -5%;
+
+}
+
+.video-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}
+
+.video-btn i {
+    background: red;
+    padding: 10px;
+    border-radius: 20px;
+}
+.bg h2 {
+    padding: 100px 20px;
+    font-size: 50px;
+    color: white;
+    z-index: 999;
+    position: relative;
+    width: 100%;
+    font-weight: 100;
+    text-align: center;
+    
+    line-height: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    margin-top: 10%;
+}
+
+.how-works-box.box-1, .how-works-box.box-2, .how-works-box.box-3 {
+    position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.how-works-box img {
+    display: none;
+}}
+
+.box-1 img {
+    position: absolute;
+    top: -35px;
+    right: 15%;
+    width: 210px;
+}
+.box-2 img {
+    position: absolute;
+    top: -35px;
+    right: 15%;
+    width: 210px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.works-box-icon i {
+    color: rgb(84, 164, 230);
+    font-size: 45px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 999;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    /* font-size: inherit; */
+    text-rendering: auto;
+    
+    -webkit-font-smoothing: antialiased;
+    /* -moz-osx-font-smoothing: grayscale; */
+}
+
+.works-box-text p {
+    color: #111;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.site-heading {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 10px;
+        position: relative;
+    z-index: 999;
+  }
+  
+  .site-heading h2 {
+    color: #3e3e3e;
+    
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    font-size: calc(1.325rem + .9vw);
+  }
+  
+  
+  .site-heading p {
+    color: #777;
+    
+    font-size: 20px;
+
+  }
